@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>SUNY WCC FILM CLUB</title>
+
+    <style type="text/css">
+
+     .container {
+      width: 100%; height: 100%; max-width: 1200px;
+      display: flex;
+      flex-direction: column;
+   }
+   @media only screen and (min-width: 414px) and (max-width: 451px) {
+      .container {
+            flex-direction: column;
+            width: 100%;
+      }
+      body{
+            font-size: 12px;
+            align-content: center;
+         }
+         table {
+            position: relative;
+           max-width: 100%;
+           border-spacing: 4vh 0vh!important;
+           font-size: 20px;
+           top: 40px;
+         } 
+         div#textbox1 {
+            position: relative;
+            display: block;
+            max-width: 300px;
+            max-height: 100px;
+            font-size:12px; 
+            left: 2%;
+            top: 50px;
+            margin: 0% 0% 0%;
+         }
+         div#textbox2 {
+            position: relative;
+            left: 53%;
+            top: -435px;
+            max-width: 150px;
+            min-height: 50px;
+            font-size: 12px;
+         }
+         div#textbox3 {
+            position: relative;
+            left: 6%;
+            top: -470px;
+            max-width: 350px;
+            align-content: baseline;
+         }
+         div#textbox4 {
+            position: relative;
+            left: 108px;
+            top: -12px;
+            margin-bottom: 50px;
+         }
+         img#frontimage {
+            max-height: 300px;
+            min-width: 400px;
+            left: -7px;
+         }
+         img#secondimage {
+            position: relative;
+            bottom: -650px;
+            right: 45px;
+            display: block;
+            width: 70%;
+            height: 500px;
+            border-radius: 5%;
+            overflow-x: hidden;
+            margin-bottom: 90px;
+         }
+         div#quote {
+            position: relative;
+            top: 125px;
+         }
+         img#logo {
+            position: relative;
+            top: -43px;
+            max-width: 50px;
+            max-height: 50px;
+         }
+   }
+   @media only screen and (min-width: 412px) and (max-width: 414){
+      .container {
+            flex-direction: column;
+            width: 100%;
+         }
+         body{
+            font-size: 12px;
+            align-content: center;
+         }
+         table {
+           max-width: 100%;
+           border-spacing: 4vh 0vh!important;
+         }
+         div#textbox1 {
+            position: relative;
+            display: block;
+            max-width: 300px;
+            max-height: 150px;
+            font-size:12px; 
+            left: 2%;
+            top: 10px;
+            margin: 0% 0% 0%;
+         }
+         div#textbox2 {
+            position: relative;
+            left: 50%;
+            top: -490px;
+            max-width: 150px;
+            min-height: 50px;
+            font-size: 12px;
+         }
+         div#textbox3 {
+            position: relative;
+            left: 1%;
+            top: -470px;
+            max-width: 350px;
+            align-content: baseline;
+         }
+         div#textbox4 {
+            position: relative;
+            left: 90px;
+            top: -12px;
+            margin-bottom: 50px;
+         }
+         div#quote {
+            position: relative;
+            top: 110px;
+         }
+         img#frontimage {
+            max-height: 300px;
+            min-width: 300px;
+            left: 0px;
+         }
+         img#secondimage {
+            position: relative;
+            bottom: -650px;
+            right: 45px;
+            display: block;
+            width: 70%;
+            height: 500px;
+            border-radius: 5%;
+            overflow-x: hidden;
+            margin-bottom: 90px;
+         }
+         div#sunywcc {
+            left: -5px;
+            top: -5px;
+         }
+         img#wccff{
+            position: relative;
+            top: 50px;
+            margin: 50px;
+            max-width: 220px;
+         }
+         img#logo {
+            max-width: 70px;
+            max-height: 70px;
+            left: 20px;
+         }
+}
+
+ /* Styles for mobile screens (under 640px) */
+      @media screen and (min-width: 451px) and (max-width: 640px) {
+         .container{
+            flex-direction: column;
+            max-width: 100%;
+         }
+         body{
+            font-size: 12px;
+            align-content: center;
+         }
+         table {
+           max-width: 100%;
+           border-spacing: 4vh 0vh!important;
+         }
+         div#textbox1 {
+            position: relative;
+            max-width: 200px;
+            max-height: 200px;
+            font-size:12px; 
+            left: 2%;
+            top: -300px;
+         }
+         div#textbox2 {
+            position: relative;
+            left: 72%;
+            top: 10px;
+            max-width: 150px;
+            min-height: 100px;
+            font-size: 12px;
+         }
+         div#textbox3 {
+            position: relative;
+            left: 10%;
+            top: -400px;
+            
+         }
+         div#textbox4 {
+            position: relative;
+            left: 299px;
+            top: -12px;
+            margin-bottom: 50px;
+         }
+         img#frontimage {
+            max-height: 300px;
+            left: 0px;
+         }
+         img#secondimage {
+            position: relative;
+            bottom: -650px;
+            right: -7px;
+            display: block;
+            width: 70%;
+            height: 500px;
+            border-radius: 5%;
+            overflow-x: hidden;
+            margin-bottom: 90px;
+         }
+         div#sunywcc {
+            left: -5px;
+         }
+         img#wccff{
+            position: relative;
+            top: 50px;
+            margin: 50px;
+            max-width: 220px;
+         }
+         img#logo {
+            max-width: 70px;
+            max-height: 70px;
+            left: 30px;
+         }
+}
+
+ /* Styles for tablets (640px to 991px) */
+      @media screen and (min-width: 641px) and (max-width: 991px) {
+         .container{
+            flex-direction: column;
+            max-width: 100%;
+         }
+         div#textbox1 {
+            position: relative;
+            left: 1%;
+         }
+         div#textbox2 {
+            position: relative;
+            left: 70%;
+         }
+         div#textbox3 {
+            position: relative;
+            left: 2%;
+            top: -400px;
+            
+         }
+         div#textbox4 {
+            position: relative;
+            left: 300px;
+            top: 20px;
+            margin-bottom: 50px;
+         }
+         img#secondimage {
+            position: relative;
+            bottom: -600px;
+            right: -87px;
+            display: block;
+            width: 70%;
+            height: 500px;
+            border-radius: 5%;
+            overflow-x: hidden;
+            margin-bottom: 90px;
+         }
+         #wccff{
+            position: relative;
+            top: 50px;
+            left: -20px;
+            margin: 50px;
+         }
+}
+      @media screen and (min-width: 991px) and (max-width: 1080px) {
+         table {
+            position: relative;
+           max-width: 100%;
+           border-spacing: 4vh 0vh!important;
+           font-size: 20px;
+           top: 40px;
+         } 
+         img#logo {
+            max-width: 70px;
+            max-height: 70px;
+            left: 30px;
+            top: 20px;
+            font-size: 12px; 
+         }
+      }  
+      @media screen and (min-width: 319px) and (max-width: 411px) {
+         html {
+            overflow-x: hidden;
+        }
+         table {
+           position: relative;
+           max-width: 100%;
+           border-spacing: 4vh 0vh!important;
+           font-size: 20px;
+           top: 50px;
+         }
+         img#logo {
+            max-width: 80px;
+            max-height: 80px;
+            left: 10px;
+            top: 5px;
+         }
+         img#frontimage {
+            max-height: 300px;
+            min-width: 200px;
+            left: 0px;
+         }
+         img#secondimage {
+            position: relative;
+            top: 900px;
+            left: -5%;
+            display: block;
+            min-width: 350px;
+            width: 70%;
+            height: 500px;
+            border-radius: 5%;
+            overflow-x: hidden;
+            margin-bottom: 500px;
+         }
+         div#textbox1 {
+            position: relative;
+            left: 1%;
+            top: 10px;
+         }
+         div#textbox2 {
+            position: relative;
+            left: 50%;
+            top: -290px;
+            max-width: 150px;
+            min-height: 100px;
+            font-size: 12px;
+         }
+         div#textbox3 {
+            position: relative;
+            left: 1px;
+            max-width: 370px;
+            top: -600px;
+         }
+         div#textbox4 {
+            position: relative;
+            left: 100px;
+            top: -100px;
+            margin-bottom: 100px;
+         }
+         div#quote {
+            position: relative;
+            top: 400px;
+         }
+      }
+      @media screen and (min-width: 990px) and (max-width: 1200px) {
+         html {
+            overflow-x: hidden;
+        }
+         table {
+           position: relative;
+           max-width: 100%;
+           border-spacing: 4vh 0vh!important;
+           font-size: 20px;
+           top: 50px;
+         }
+         img#logo {
+            max-width: 80px;
+            max-height: 80px;
+            left: 10px;
+            top: 5px;
+         }
+         img#frontimage {
+            min-width: 65%;
+            left: 0px;
+         }
+         img#secondimage {
+            position: relative;
+            top: 450px;
+            left: -20%;
+            display: block;
+            width: 60%;
+            height: 500px;
+            border-radius: 5%;
+            overflow-x: hidden;
+            margin-bottom: 20px;
+         }
+         div#textbox1 {
+            position: relative;
+            left: 1%;
+            bottom: 50px;
+         }
+         p#paragraph2 {
+            position: relative;
+         }
+         div#textbox2 {
+            position: relative;
+            left: 80%;
+            top: -50px;
+            max-width: 150px;
+            min-height: 100px;
+            font-size: 12px;
+         }
+         div#textbox3 {
+            position: relative;
+            left: 60%;
+            max-width: 370px;
+            top: -300px;
+         }
+         div#textbox4 {
+            position: relative;
+            left: 150px;
+            top: -70px;
+            margin-bottom: 10px;
+         }
+         div#quote {
+            position: relative;
+            top: 200px;
+         }
+      }
+      @media screen and (min-width: 1200px) {
+         html {
+            overflow-x: hidden;
+        }
+         table {
+           position: relative;
+           max-width: 100%;
+           border-spacing: 4vh 0vh!important;
+           font-size: 20px;
+           top: 50px;
+         }
+         img#logo {
+            max-width: 80px;
+            max-height: 80px;
+            left: 10px;
+            top: 5px;
+         }
+         div#wccff {
+           max-width: 15%;
+           margin: 0%;
+         }
+         div#textbox1 {
+            position: relative;
+            left: 5%;
+            bottom: 50px;
+         }
+         div#textbox2 {
+            position: relative;
+            left: 75%;
+         }
+         div#textbox4 {
+            position: relative;
+            
+         }
+      }
+/*END OF MEDIA QUERYS!!!!!!!!!!!!!*/
+
+    body {
+        background-image: url(IMAGES/HomeBackground.avif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow-x: hidden;
+        height: fit-content;
+        width: 100%;
+        height: 100%;
+      } 
+
+     #logo {
+        position: absolute;
+        top: -20px;
+        bottom: 0px;
+        left: -2px;
+        
+      }
+
+     #frontimage {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        height: 500px;
+        top: 50px;
+        position: relative;
+      }
+
+     #secondimage {
+        position: relative;
+        bottom: -250px;
+        right: -300px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        height: 500px;
+        overflow: hidden;
+        object-fit: cover;
+        box-sizing: border-box;
+        border-radius: 5%;
+        outline: 3px outset #2054ff;
+      }
+
+     #textbox1 {
+        position: relative;
+        top: -440px;
+        left: 200px;
+        margin-bottom: -300px;
+        outline: 5px outset #e28ad4;
+        border-radius: 2%;
+        background-color: #3d61d726;
+      }
+
+     #textbox2 {
+        position: relative;
+        top: -80px;
+        right: -1010px;
+        text-align: center;
+        margin-bottom: -200px;
+        outline: 5px outset #ec7c83;
+        border-radius: 2%;
+        background-color: #2054ff26;
+        font-size: 12px;
+      }
+
+     #textbox3 {
+        position: relative;
+        top: -200px;
+        right: -110px;
+        font-size: 20px;
+        outline: 5px outset #be72cf;
+        border-radius: 2%;
+        background-color: #2054ff26;
+        line-height: 1.2;
+        padding-top: 5px;
+      }
+
+     #textbox4 {
+      position: relative;
+      font-size: 12px;
+      text-align: center;
+      bottom: 260px;
+      left: 1000px;
+      outline: 5px outset #ec7c83;
+      background-color: #2054ff26;
+      border-radius: 2%;
+      margin-bottom: -200px;
+      }
+
+    #sunywcc {
+        position: relative;
+        top: 20px;
+        text-shadow: 2px 4px 2px #c15eafa0;
+        }
+
+     #quote {
+        position: relative;
+        top: 180px;
+     }
+
+     #wccff {
+        position: relative;
+        display: block;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        left: 50px;
+     }
+
+     table {
+        border-spacing: 20vh 0vh;
+        border: 0px;
+     }
+
+     hr {
+        position: relative;
+        margin: 0px;
+        border-width: 0px;
+        padding-top: 10px;
+     }
+     a:link {
+        color: rgb(240, 154, 251);
+        background-color: transparent;
+        text-decoration: none;
+     }
+
+     a:visited {
+        color: rgb(117, 36, 50);
+        background-color: transparent;
+        text-decoration: none;
+     }
+
+     a:hover {
+        color: rgb(199, 58, 108);
+        background-color: transparent;
+        text-decoration: underline;
+     }
+
+     a:active {
+        color: rgb(72, 0, 255);
+        background-color: transparent;
+        text-decoration: underline;
+     }
+
+     @font-face {
+        font-family: 'Mostera Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Mostera Regular'), url('MosteraRegular-X38pZ.woff') format('woff');
+     }
+     @font-face {
+        font-family: 'Costa Nova Regular';
+        font-style: normal;
+        font-weight: normal;
+        src: local('Costa Nova Regular'), url('Costa Nova.woff') format('woff');
+     }
+
+    </style>
+</head>
+<body>
+    <main>
+
+        <hr>
+        <nav>
+        <table style="margin: 0px auto;">
+        <tr>
+            <div class="Film Club WCC">
+        <td><a href="index.html"><strong>HOME</strong></a></td>
+            </div>
+          <!-- <div class="AUDITIONS">
+        <td><a href="AUDITIONS.html">AUDITIONS</a></td>
+            </div>-->
+            <div class="EVENTS">
+        <td><a href="EVENTS.html"><strong>EVENTS</strong></a></td>
+            </div>
+            <div class="MEETINGS">
+        <td><a href="MEETINGS.html"><strong>MEETINGS</strong></a></td>
+            </div>
+           <!-- <div class="MOVIE SCREENINGS">
+        <td><a href="MOVIE SCREENINGS.html">MOVIE SCREENINGS</a></td>
+            </div>-->
+            <div class="OFFICERS">
+        <td><a href="LEADERS.html"><strong>LEADERS</strong></a></td>
+            </div>
+        </tr>
+        </table>
+        </nav>
+      </hr>
+
+
+        <hr>
+         <!--ADD LINK ON SRC=""-->
+         <header>
+            <a href="index.html">
+            <img id="logo" src=" " alt="SUNY WCC FILM CLUB" title="HOME"></a>
+        </header>
+      </hr>
+
+
+  <!--TO DO MAYBE ADD IMAGES WITH EVENT BANNERS AND OTHERS-->
+      <div id="sunywcc">
+         <link rel="stylesheet" type="text/css">
+         <h1 style=" color: #4169e9; font-size: 40px; font-family: 'Mostera Regular';"><center>WCC DIGITAL FILM CLUB!</center></h1>
+      </div>
+   
+  <img id="frontimage" src="IMAGES/FrontImage.jpg" style="border-radius: 50%; object-fit: cover;">
+        <div id="textbox1" style="width: 250px;height: 250px;">
+             <!--RANDOM TITLE. REMEMBER TO CHANGE-->
+            <h2 id="title1" style="color: #9b5a95;"><center>About Us</center></h2>
+             <!--RANDOM TEXT. REMEMBER TO CHANGE-->
+             <center><p id="paragraph1" style="color: #ffcff4;">WCC Digital Film Club is a community where dedicated filmmakers get together to create inspiring films regardless of their backgrounds. We ecourage our members who love script writting to allow us help their visions come a reality. In our <a href="MEETINGS.html">meetings</a> we do discussions to hands-on work workshops. Feel free to visit us!</p></center>
+        </div>
+        <div id="textbox2" style="width: 200px;height: 100px;">
+            <h2 id="title2" style="color: #af3056;"> About This Image</h2>
+            <p id="paragraph2" style="color: #dc7090;">Awards given to participants in our annual WCC Film Festival who submitted their own films.</p>
+         </div>
+
+        <div id="quote">
+        <h1 style="color: #4169e9; font-size: 35px; font-family: 'Costa Nova Regular';"><center> ""BUILDING BRIDGES BY CREATING A SHARED EXPERIENCE IN ALL AREAS""</center></h1>
+        </div>
+
+        <img id="secondimage" src="IMAGES/SecondFrontImage.jpg" class="right">
+        <div id="textbox3" style="width: 500px;height: 450px;">
+            <h2 id="mission" style="color: #371a34;"><center>Our mission</center></h2>
+           <center><p style="color: #ffcff4;">The Digital Film Club aims to provide a safe environment for creative minds to express themselves. We not only strive on producing films that represent diversity, including the LGBTQIA+ community, women, people of color, and more. But to grow our community where all minds matters and we empower each other through collaboration and unity.</p> 
+            <p style="color: #ffcff4;">Through our members efforts and a dedication to the film making process, we will create art that will impact the future and shape it into a better industry where we welcome the next generations.</p></center>
+        </div>
+
+        <div id="textbox4" style="width: 200px;height: 100px;">
+            <h2 id="title3" style="color: #af3056;">About This Image</h2>
+            <p id="paragraph3" style="color: #dc7090;">ADD TEXT</p>
+        </div>
+
+    <!--<a href="[instagram link]"></a> <img src="[instagram logo image]">-->
+       <div id="wccff"><a href="https://wccff.weebly.com/"><img src="https://wccff.weebly.com/uploads/1/0/3/0/103000512/editor/this-one-no-shadow-copy-2.png?1646110873" style="height: 200px;"></a></div>
+    </main>
+    
+       <footer id="footer" style="color: #2054ff;">
+       <center> Copyright &copy; SUNY WCC Digital Film Club 2024</center>
+    </footer>
+    
+</body>
+</html>
